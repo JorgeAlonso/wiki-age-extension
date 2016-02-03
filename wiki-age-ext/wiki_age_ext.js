@@ -1,4 +1,4 @@
-var bday = $('span.bday').html();
+var bday = $('span.bday').html() || $('table.infobox tr:eq(3) td a:eq(1)').html();
 var bdayDate = new Date(bday);
 var dob = bdayDate.getFullYear();
 
